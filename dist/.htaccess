@@ -1,0 +1,31 @@
+# php_flag zlib.output_compression On
+
+# protect the htaccess file
+<files .htaccess>
+order allow,deny
+deny from all
+</files> 
+
+# disable the server signature
+ServerSignature Off 
+
+# limit file uploads to 10mb
+LimitRequestBody 10240000 
+
+# disable directory browsing
+Options All -Indexes
+
+# 1 Month for all your static assets
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg|ttf)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# 1 DAYS for rss feeds and robots
+<filesMatch ".(xml|txt)$">
+Header set Cache-Control "max-age=86400, public, must-revalidate"
+</filesMatch>
+
+# 4 HOURS for your real articles files
+<filesMatch ".(html|htm)$">
+Header set Cache-Control "max-age=14400, must-revalidate"
+</filesMatch>

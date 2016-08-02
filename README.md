@@ -9,9 +9,9 @@
 
 #### You can go ahead and install them like so:
 
-```sh sudo apt-get install nodejs autoconf automake libtool nasm make ```
+```$ sudo apt-get install nodejs autoconf automake libtool nasm make ```
 
 #Usage:
-1. Make sure that ```sh npm install ``` was sucessfull.
-2. Put your files under ```sh img/ ``` directory and just run ```sh npm start``` 
-3. Grab your compressed files inside ```sh dist/img/``` and have fun :)
+1. Make sure that ```$ npm install ``` was sucessfull.
+2. Put your files under ```img/ ``` directory and just run ```$ npm start``` 
+3. Grab your compressed files inside ```dist/img/``` and have fun :)

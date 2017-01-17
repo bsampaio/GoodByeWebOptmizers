@@ -1,4 +1,7 @@
 #Install Requirements
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/03ba7ec522d4475da496e68f86390b24)](https://www.codacy.com/app/bsampaio/GoodByeWebOptmizers?utm_source=github.com&utm_medium=referral&utm_content=bsampaio/GoodByeWebOptmizers&utm_campaign=badger)
+
 ###You'll need those softwares/libs to run the optimization tool
 - nodejs
 - autoconf 2.56 or later
